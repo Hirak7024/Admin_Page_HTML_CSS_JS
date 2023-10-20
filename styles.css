@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto Serif', serif; */
+}
+.Main_Container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.dashboard {
+    width: 15vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    background-color: #222e3c;
+    padding-top: 10px;
+}
+
+.dashboard_heading {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.pages_heading {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+.dashboard_ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.dashboard_li{
+    width: 100%;
+    height: 40px;
+    gap: 10px;
+    align-items: center;
+    color: white;
+    display: flex;
+    padding-left: 30px;
+}
+.dashboard_li:hover{
+    cursor: pointer;
+    background-color: #3a4c62;
+    border-left: 2px solid #b6d0ed;
+}
+
+
+.li_icons {
+    font-size: 13px;
+}
+
+.li_names {
+    font-size: 13px;
+}
+.navbar{
+    width: 85vw;
+    height: 60px;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    position: relative;
+    z-index: 10;
+}
+.navbar_right{
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+.navbar_person_img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.navbar_person{
+    font-size: 14px;
+}
+.navbar_icons{
+    font-size: 18px;
+    cursor: pointer;
+}
+.navbar_bell{
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.navbar_notification{
+    font-size: 9px;
+    font-weight: 500;
+    background-color: royalblue;
+    color: white;
+    width: 14px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: -3px;
+}
+.analytics_dashboard{
+    background-color: #f3f5f9;
+    width: 85vw;
+    height: calc(100vh - 60px);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.analytics_dashboard_heading{
+    font-size: 23px;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+.card{
+    background-color: white;
+    border-radius:5px;
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 200px;
+    height: fit-content;
+    padding: 15px;
+    gap: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.card_icon{
+    position: absolute;
+    right: 15px;
+    font-size: 12px;
+    background-color: #d3e2f7;
+    color: royalblue;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_week{
+    display: flex;
+    gap: 5px;
+}
+.card_heading{
+    font-size: 12px;
+    font-weight: 700;
+    color: grey;
+}
+.card_number{
+    font-size: 22px;
+}
+.card_week{
+    font-size: 11px;
+    font-weight: 500;
+    color: grey;
+}
+.analytics_dashboard_upper_left{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.analytics_dashboard_upper_right{
+    padding-top: 20px;
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.analytics_dashboard_lower{
+    display: flex;
+    gap: 10px;
+}
+.analytics_dashboard_lower_left{
+    flex: 1;
+}
+.analytics_dashboard_lower_middle{
+    flex: 2;
+    position: relative;
+    background-color: white;
+}
+.world_map_heading{
+    font-size: 14px;
+    color: grey;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+   
+.world_map{
+    width: 100%;
+    height: 14rem;
+    object-fit: cover;
+}
+.world_map_btn_container{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+}
+.world_map_btn{
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    border: none;
+}
+.analytics_dashboard_lower_right{
+    flex: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.charts_title{
+    font-size: 14px;
+    color: grey;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+.analytics_dashboard_upper{
+    display: flex;
+}
+.dashboard_calender{
+    font-size: 13px;
+    color: grey;
+    margin-left: 20px;
+}
+.wrapper{
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    padding-top: 20px;
+  }
+  .wrapper header{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 5px 10px;
+    justify-content: space-between;
+  }
+  header .icons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .icons span{
+    height: 38px;
+    width: 38px;
+    margin: 0 1px;
+    cursor: pointer;
+    color: #878787;
+    text-align: center;
+    line-height: 38px;
+    font-size: 14px;
+    user-select: none;
+    border-radius: 50%;
+  }
+  .icons span:last-child{
+    margin-right: -10px;
+  }
+  header .icons span:hover{
+    background: #f2f2f2;
+  }
+  header .current-date{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .calendar{
+    padding: 15px;
+  }
+  .calendar ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+  }
+  .calendar .days{
+    margin-bottom: 10px;
+  }
+  .calendar li{
+    color: #333;
+    width: calc(100% / 7);
+    font-size: 12px;
+  }
+  .calendar .weeks li{
+    font-weight: 500;
+    cursor: default;
+  }
+  .calendar .days li{
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+  }
+  .days li.inactive{
+    color: #aaa;
+  }
+  .days li.active{
+    color: #fff;
+  }
+  .days li::before{
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 25px;
+    width: 25px;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .days li.active::before{
+    background: royalblue;
+  }
+  .days li:not(.active):hover::before{
+    background: #f2f2f2;
+  }
