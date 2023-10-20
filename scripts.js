@@ -6,8 +6,8 @@ var areaChartOptions = {
         data: [2000, 1500, 2500, 3000, 3500, 4000, 3000, 3500, 3000, 2500, 2000, 2500]
     }],
     chart: {
-        height: 230,
-        width: 700,
+        height: "200px",
+        width: "400px",
         type: 'area',
         zoom: {
             enabled: false
@@ -41,8 +41,8 @@ var donutChartOptions = {
     series: [4306, 3801, 1689],
     labels: ['Chrome', 'Firefox', 'IE'],
     chart: {
-        height: 370,
-        width: 370,
+        height: 380,
+        width: 350,
         type: 'donut',
         zoom: {
             enabled: false

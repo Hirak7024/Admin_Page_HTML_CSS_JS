@@ -95,7 +95,7 @@
             <!-- NAVBAR -->
             <div class="navbar">
                 <div class="navbar_left">
-                    <p class="navbar_icons"><i class="fa-solid fa-bars"></i></p>
+                    <p class="navbar_hamburger_icon"><i class="fa-solid fa-bars"></i></p>
                 </div>
                 <div class="navbar_right">
                     <div class="navbar_bell">
@@ -114,37 +114,41 @@
                 <h1 class="analytics_dashboard_heading"><strong>Analytics</strong> Dashboard</h1>
                 <div class="analytics_dashboard_upper">
                     <div class="analytics_dashboard_upper_left">
-                        <div class="card">
-                            <p class="card_heading">Sales</p>
-                            <p class="card_icon"><i class="fa-solid fa-truck"></i></p>
-                            <p class="card_number">2,382</p>
-                            <span class="card_week">
-                                <p style="color:red">-3.65%</p>Since Last Week
-                            </span>
+                        <div class="two_card_arrange">
+                            <div class="card">
+                                <p class="card_heading">Sales</p>
+                                <p class="card_icon"><i class="fa-solid fa-truck"></i></p>
+                                <p class="card_number">2,382</p>
+                                <span class="card_week">
+                                    <p style="color:red">-3.65%</p>Since Last Week
+                                </span>
+                            </div>
+                            <div class="card">
+                                <p class="card_heading">Earnings</p>
+                                <p class="card_icon"><i class="fa-solid fa-dollar-sign"></i></p>
+                                <p class="card_number">&#x24; 21,300</p>
+                                <span class="card_week">
+                                    <p style="color:rgb(10, 208, 10)">6.65%</p>Since Last Week
+                                </span>
+                            </div>
                         </div>
-                        <div class="card">
-                            <p class="card_heading">Earnings</p>
-                            <p class="card_icon"><i class="fa-solid fa-dollar-sign"></i></p>
-                            <p class="card_number">&#x24; 21,300</p>
-                            <span class="card_week">
-                                <p style="color:rgb(10, 208, 10)">6.65%</p>Since Last Week
-                            </span>
-                        </div>
-                        <div class="card">
-                            <p class="card_heading">Visitors</p>
-                            <p class="card_icon"><i class="fa-solid fa-user-group"></i></p>
-                            <p class="card_number">14,212</p>
-                            <span class="card_week">
-                                <p style="color:rgb(10, 208, 10)">5.25%</p>Since Last Week
-                            </span>
-                        </div>
-                        <div class="card">
-                            <p class="card_heading">Orders</p>
-                            <p class="card_icon"><i class="fa-solid fa-cart-shopping"></i></p>
-                            <p class="card_number">64</p>
-                            <span class="card_week">
-                                <p style="color:red">-2.25%</p>Since Last Week
-                            </span>
+                        <div class="two_card_arrange">
+                            <div class="card">
+                                <p class="card_heading">Visitors</p>
+                                <p class="card_icon"><i class="fa-solid fa-user-group"></i></p>
+                                <p class="card_number">14,212</p>
+                                <span class="card_week">
+                                    <p style="color:rgb(10, 208, 10)">5.25%</p>Since Last Week
+                                </span>
+                            </div>
+                            <div class="card">
+                                <p class="card_heading">Orders</p>
+                                <p class="card_icon"><i class="fa-solid fa-cart-shopping"></i></p>
+                                <p class="card_number">64</p>
+                                <span class="card_week">
+                                    <p style="color:red">-2.25%</p>Since Last Week
+                                </span>
+                            </div>
                         </div>
                     </div>
                     <div class="analytics_dashboard_upper_right">
@@ -159,9 +163,11 @@
                             <h1 class="dashboard_calender">Calender</h1>
                             <header>
                                 <div class="icons">
-                                    <span id="prev" class="material-symbols-rounded"><i class="fa-solid fa-angles-left"></i></span>
+                                    <span id="prev" class="material-symbols-rounded"><i
+                                            class="fa-solid fa-angles-left"></i></span>
                                     <p class="current-date"></p>
-                                    <span id="next" class="material-symbols-rounded"><i class="fa-solid fa-angles-right"></i></span>
+                                    <span id="next" class="material-symbols-rounded"><i
+                                            class="fa-solid fa-angles-right"></i></span>
                                 </div>
                             </header>
                             <div class="calendar">
@@ -181,14 +187,14 @@
                     <div class="analytics_dashboard_lower_middle">
                         <h1 class="world_map_heading">Real Time</h1>
                         <div class="world_map_btn_container">
-                        <button class="world_map_btn">+</button>     
-                        <button class="world_map_btn">-</button>     
+                            <button class="world_map_btn">+</button>
+                            <button class="world_map_btn">-</button>
                         </div>
                         <img class="world_map" src="https://www.webinterpret.com/wp-content/uploads/2019/03/map-1.jpg"
                             alt="">
                     </div>
                     <div class="analytics_dashboard_lower_right">
-                        <p class="charts_title">Browser Usage</p>
+                        <p class="donut_charts_title">Browser Usage</p>
                         <div id="donut_chart"></div>
                     </div>
                 </div>
@@ -201,6 +207,24 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- CUSTOM JS -->
     <script src="scripts.js"></script>
+    <script>
+        let hamburger = document.querySelector(".navbar_hamburger_icon");
+        let dashboard = document.querySelector(".dashboard");
+        let Nav_And_MainContent = document.querySelector(".Nav_And_MainContent");
+
+        hamburger.onclick = function () {
+            dashboard.classList.toggle("active");
+            Nav_And_MainContent.classList.toggle("active");
+        }
+
+        document.onclick = function (e) {
+            if (!dashboard.contains(e.target) && !Nav_And_MainContent.contains(e.target)) {
+                dashboard.classList.remove("active");
+                Nav_And_MainContent.classList.remove("active");
+            }
+        }
+
+    </script>
 </body>
 
 </html>
