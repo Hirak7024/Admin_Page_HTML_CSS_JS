@@ -460,9 +460,9 @@ header .current-date {
     background: #f2f2f2;
 }
 
-@media (width > 425px) and (width <=768px) {
+@media (width > 425px) and (width <=870px) {
     .dashboard {
-        height: 210%;
+        height: 179%;
         width: 20vw;
         gap: 20px;
     }
