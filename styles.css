@@ -7,37 +7,41 @@
     font-family: 'Roboto', sans-serif;
     /* font-family: 'Roboto Serif', serif; */
 }
-.Main_Container{
+
+.Main_Container {
     width: 100vw;
     height: 100vh;
     display: flex;
 }
+
 .dashboard {
     width: 15vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
     position: relative;
     left: 0;
     color: white;
     background-color: #222e3c;
-    padding-top: 10px;
+    padding-top: 15px;
     /* transition-property: all;
     transition-duration: 0.3s; */
 }
-.active.dashboard{
+
+.active.dashboard {
     left: -30vw;
 }
+
 .dashboard_heading {
-    font-size: 20px;
-    padding-left: 20px;
+    font-size: 17px;
+    padding-left: 17px;
 }
 
 .pages_heading {
     font-size: 12px;
     font-weight: 700;
-    margin-bottom: 5px;
+    margin-bottom: 3px;
     padding-left: 20px;
 }
 
@@ -47,16 +51,17 @@
     list-style: none;
 }
 
-.dashboard_li{
+.dashboard_li {
     width: 100%;
-    height: 40px;
+    height: 35px;
     gap: 10px;
     align-items: center;
     color: white;
     display: flex;
     padding-left: 30px;
 }
-.dashboard_li:hover{
+
+.dashboard_li:hover {
     cursor: pointer;
     background-color: #3a4c62;
     border-left: 2px solid #b6d0ed;
@@ -64,21 +69,24 @@
 
 
 .li_icons {
-    font-size: 13px;
+    font-size: 12px;
 }
 
 .li_names {
-    font-size: 13px;
+    font-size: 12px;
 }
-.Nav_And_MainContent{
+
+.Nav_And_MainContent {
     width: 85vw;
 }
-.active.Nav_And_MainContent{
+
+.active.Nav_And_MainContent {
     position: absolute;
     width: 100vw;
     left: 0;
 }
-.navbar{
+
+.navbar {
     width: 100%;
     height: 60px;
     padding: 0 1rem;
@@ -91,43 +99,50 @@
     /* transition-property: all;
     transition-duration: 0.3s; */
 }
-.navbar_right{
+
+.navbar_right {
     display: flex;
-    gap: 0.8rem;
+    gap: 1rem;
     align-items: center;
 }
-.navbar_person_img{
-    width: 40px;
-    height: 40px;
+
+.navbar_person_img {
+    width: 35px;
+    height: 35px;
     object-fit: cover;
     cursor: pointer;
 }
-.navbar_person{
-    font-size: 14px;
+
+.navbar_person {
+    font-size: 15px;
     cursor: pointer;
 }
-.navbar_icons{
+
+.navbar_icons {
     font-size: 18px;
     cursor: pointer;
 }
-.navbar_hamburger_icon{
+
+.navbar_hamburger_icon {
     font-size: 18px;
     cursor: pointer;
 }
-.navbar_bell{
-    font-size: 20px;
+
+.navbar_bell {
+    font-size: 18px;
     cursor: pointer;
     position: relative;
     display: flex;
     align-items: center;
 }
-.navbar_notification{
-    font-size: 9px;
+
+.navbar_notification {
+    font-size: 7px;
     font-weight: 500;
     background-color: royalblue;
     color: white;
-    width: 14px;
-    height: 14px;
+    width: 12px;
+    height: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,115 +151,161 @@
     top: -2px;
     right: -3px;
 }
-.analytics_dashboard{
+
+.analytics_dashboard {
     background-color: #f3f5f9;
     width: 100%;
     position: relative;
-    height: fit-content;
-    padding: 2rem;
+    height: calc(100vh - 60px);
+    padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.4rem;
     /* transition-property: all;
     transition-duration: 0.3s; */
 }
-.analytics_dashboard_heading{
-    font-size: 23px;
+
+.analytics_dashboard_heading {
+    font-size: 21px;
     font-weight: 200;
-    margin-bottom: 1rem;
 }
-.card{
+
+.card {
     background-color: white;
-    border-radius:5px;
-    /* margin: 20px; */
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 200px;
+    flex: 1;
     height: fit-content;
-    padding: 15px;
-    gap: 20px;
+    padding: 13px 15px;
+    gap: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
-.card_icon{
+
+.card_icon {
     position: absolute;
     right: 15px;
-    font-size: 12px;
+    font-size: 11px;
     background-color: #d3e2f7;
     color: royalblue;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.card_week{
+
+.card_week {
     display: flex;
     gap: 5px;
 }
-.card_heading{
-    font-size: 12px;
-    font-weight: 700;
-    color: grey;
-}
-.card_number{
-    font-size: 22px;
-}
-.card_week{
+
+.card_heading {
     font-size: 11px;
     font-weight: 500;
     color: grey;
 }
-.analytics_dashboard_upper_left{
+
+.card_number {
+    font-size: 18px;
+}
+
+.card_week {
+    font-size: 9px;
+    font-weight: 500;
+    color: grey;
+}
+
+.analytics_dashboard_upper_left {
     width: 40%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
 }
-.two_card_arrange{
-    display: flex; 
-    gap: 1rem; 
+
+.two_card_arrange {
+    display: flex;
+    width: 100%;
+    gap: 1rem;
     align-items: center;
 }
-.analytics_dashboard_upper_right{
-    padding-top: 20px;
-    width: 55%;
-    height: 270px;
+
+.analytics_dashboard_upper_right {
+    padding: 20px 10px;
+    width: 57%;
+    height: 12.5rem;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* overflow-y: hidden;
+    overflow-x: auto; */
 }
-.analytics_dashboard_lower{
+
+#area_chart {
+    width: 100%;
+    height: 100%;
+}
+
+.analytics_dashboard_lower {
     display: flex;
+    justify-content: space-between;
     gap: 10px;
 }
-.analytics_dashboard_lower_left{
-    flex: 1;
+
+.analytics_dashboard_lower_left {
+    width: 30%;
 }
-.analytics_dashboard_lower_middle{
-    flex: 2;
+
+.analytics_dashboard_lower_middle {
+    width: 40%;
     position: relative;
     background-color: white;
     height: fit-content;
 }
-.world_map_heading{
-    font-size: 14px;
+
+.analytics_dashboard_lower_right {
+    padding: 15px 0;
+    width: 30%;
+    height: 13.5rem;
+    gap: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#donut_chart {
+    width: 100%;
+    height: 80%;
+    /* transform: scale(0.8); */
+}
+
+.donut_charts_title {
+    font-size: 12px;
     color: grey;
-    margin-top: 10px;
-    margin-left: 15px;
+}
+
+.world_map_heading {
+    font-size: 12px;
+    color: grey;
+    margin-top: 15px;
+    margin-left: 18px;
     font-weight: 500;
 }
-   
-.world_map{
+
+.world_map {
     width: 100%;
-    height: 14rem;
+    height: 11.5rem;
     object-fit: cover;
 }
-.world_map_btn_container{
+
+.world_map_btn_container {
     display: flex;
     flex-direction: column;
     gap: 7px;
@@ -252,7 +313,8 @@
     top: 3rem;
     left: 1rem;
 }
-.world_map_btn{
+
+.world_map_btn {
     width: 17px;
     height: 17px;
     display: flex;
@@ -263,53 +325,53 @@
     color: white;
     background-color: black;
     border: none;
+    cursor: pointer;
 }
-.analytics_dashboard_lower_right{
-    flex: 1;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    height: fit-content;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-}
-.charts_title{
-    font-size: 14px;
+
+.charts_title {
+    font-size: 11px;
     color: grey;
 }
-.analytics_dashboard_upper{
+
+.analytics_dashboard_upper {
     display: flex;
-    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
 }
-.dashboard_calender{
-    font-size: 13px;
+
+.dashboard_calender {
+    font-size: 12px;
+    font-weight: 500;
     color: grey;
-    margin-left: 20px;
+    margin-left: 22px;
 }
-.wrapper{
+
+.wrapper {
     width: 100%;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-    padding-top: 20px;
-  }
-  .wrapper header{
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    padding-top: 14px;
+}
+
+.wrapper header {
     display: flex;
     align-items: center;
-    padding: 10px 10px 5px 10px;
+    padding: 10px 15px;
     justify-content: space-between;
-  }
-  header .icons{
+}
+
+header .icons {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-  }
-  header .icons span{
-    height: 38px;
-    width: 38px;
+}
+
+header .icons span {
+    height: 25px;
+    width: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -318,54 +380,67 @@
     color: #878787;
     text-align: center;
     line-height: 38px;
-    font-size: 14px;
+    font-size: 12px;
     user-select: none;
     border-radius: 50%;
-  }
-  .icons span:last-child{
+}
+
+.icons span:last-child {
     margin-right: -10px;
-  }
-  header .icons span:hover{
+}
+
+header .icons span:hover {
     background: #f2f2f2;
-  }
-  header .current-date{
-    font-size: 15px;
+}
+
+header .current-date {
+    font-size: 14px;
     font-weight: 500;
-  }
-  .calendar{
-    padding: 15px;
-  }
-  .calendar ul{
+}
+
+.calendar {
+    padding: 5px 15px;
+}
+
+.calendar ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     text-align: center;
-  }
-  .calendar .days{
-    margin-bottom: 10px;
-  }
-  .calendar li{
+}
+
+.calendar .days {
+    margin-bottom: 11px;
+}
+
+.calendar li {
     color: #333;
     width: calc(100% / 7);
-    font-size: 12px;
-  }
-  .calendar .weeks li{
+    font-size: 11px;
+}
+
+.calendar .weeks li {
     font-weight: 500;
     cursor: default;
-  }
-  .calendar .days li{
+}
+
+.calendar .days li {
     z-index: 1;
     cursor: pointer;
     position: relative;
     margin-top: 10px;
-  }
-  .days li.inactive{
+    font-size: 11px;
+}
+
+.days li.inactive {
     color: #aaa;
-  }
-  .days li.active{
+}
+
+.days li.active {
     color: #fff;
-  }
-  .days li::before{
+}
+
+.days li::before {
     position: absolute;
     content: "";
     left: 50%;
@@ -375,250 +450,463 @@
     z-index: -1;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-  }
-  .days li.active::before{
-    background: royalblue;
-  }
-  .days li:not(.active):hover::before{
-    background: #f2f2f2;
-  }
-  .donut_charts_title{
-    font-size: 14px;
-    color: grey;
 }
 
-  @media (width > 768px) and (width <= 1024px) {
-    .card{
-        width: 150px;
-        padding: 10px;
-        gap: 15px;
+.days li.active::before {
+    background: royalblue;
+}
+
+.days li:not(.active):hover::before {
+    background: #f2f2f2;
+}
+
+@media (width > 425px) and (width <=768px) {
+    .dashboard {
+        height: 210%;
+        width: 20vw;
+        gap: 20px;
     }
-    .card_icon{
+
+    .Nav_And_MainContent {
+        width: 80vw;
+    }
+
+    .dashboard_heading {
+        font-size: 16px;
+    }
+
+    .pages_heading {
+        font-size: 8px;
+        padding-left: 10px;
+    }
+
+    .dashboard_li {
+        height: 35px;
+        padding-left: 15px;
+    }
+
+    .li_icons {
         font-size: 9px;
-        width: 1.3rem;
-        height: 1.3rem;
     }
-    .card_week{
-        gap: 2px;
+
+    .li_names {
+        font-size: 9px;
     }
-    .card_heading{
+
+    /* .Nav_And_MainContent {
+        
+    } */
+
+
+    .navbar {
+        height: 60px;
+    }
+
+    /* .navbar_right {
+
+    } */
+
+    .navbar_person_img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .navbar_person {
         font-size: 10px;
-        font-weight: 500;
     }
-    .card_number{
+
+    .navbar_icons {
+        font-size: 14px;
+    }
+
+    .navbar_hamburger_icon {
+        font-size: 15px;
+    }
+
+    .navbar_bell {
+        font-size: 14px;
+    }
+
+    .navbar_notification {
+        font-size: 5px;
+        width: 10px;
+        height: 10px;
+    }
+
+    .analytics_dashboard {
+        height: fit-content;
+        padding: 1rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .analytics_dashboard_heading {
         font-size: 18px;
     }
-    .card_week{
+
+    .two_card_arrange {
+        gap: 0.5rem;
+    }
+
+    .card {
+        padding: 15px 7px;
+        gap: 7px;
+    }
+
+    .card_icon {
+        font-size: 10px;
+        width: 1.5rem;
+        height: 1.5rem;
+        right: 10px;
+    }
+
+    /* .card_week {
+    } */
+
+    .card_heading {
+        font-size: 10px;
+    }
+
+    .card_number {
+        font-size: 17px;
+    }
+
+    .card_week {
         font-size: 9px;
     }
-    .analytics_dashboard_upper_right{
-        height: 210px;
-    }
-    .charts_title{
-        font-size: 12px;
-    }
-    #area_chart{
-        transform: scale(0.7);
-    }
-    .dashboard_calender{
-        font-size: 10px;
-        margin-left: 15px;
-    }
-    .wrapper{
-        padding: 15px 5px 0 5px;
-      }
-      header .icons span{
-        height: 15px;
-        width: 15px;
-        font-size: 10px;
-      }
-      header .current-date{
-        font-size: 10px;
-        font-weight: 500;
-      }
-      .calendar{
-        padding: 10px;
-      }
-      .calendar li{
-        font-size: 7px;
-      }
-      .days li::before{
-        height: 15px;
-        width: 15px;
-      }
-      .world_map_heading{
-        font-size: 10px;
-        font-weight: 600;
-    }
-       
-    .world_map{
+
+    .analytics_dashboard_upper_left {
         width: 100%;
-        height: 10rem;
     }
-    .world_map_btn{
+
+
+
+    .analytics_dashboard_upper_right {
+        width: 100%;
+        height: 15rem;
+        padding: 10px 0px;
+    }
+
+    .charts_title {
+        font-size: 10px;
+    }
+
+    /* #area_chart {
+        width: 200%;
+    } */
+
+    .analytics_dashboard_lower {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .analytics_dashboard_lower_left {
+        width: 80%;
+    }
+
+    .analytics_dashboard_lower_middle {
+        width: 80%;
+
+    }
+
+    .analytics_dashboard_lower_right {
+        width: 80%;
+        padding-top: 15px;
+        height: 15rem;
+        gap: 10px;
+    }
+
+    #donut_chart {
+        transform: scale(0.8);
+    }
+
+    .donut_charts_title {
+        font-size: 13px;
+    }
+
+    .world_map_heading {
+        font-size: 13px;
+    }
+
+    .world_map {
+        height: 12rem;
+    }
+
+    /* .world_map_btn_container {
+        
+    } */
+
+    .world_map_btn {
         width: 13px;
         height: 13px;
         font-size: 10px;
     }
-    .analytics_dashboard_lower_right{
-        height: 200px;
-        padding-top: 50px;
-    }
-    #donut_chart{
-        transform: scale(0.6);
-    }
-  }
 
-  @media (width > 600px) and (width <= 768px) {
-    .analytics_dashboard_upper{
+    .analytics_dashboard_upper {
         flex-direction: column;
-    }
-    .analytics_dashboard_upper_right{
-        width: 25rem;
-    }
-    #area_chart{
-        transform: scale(0.7);
-    }
-    .analytics_dashboard_lower{
-        flex-direction: column;
-    }
-    .analytics_dashboard_lower_left{
-        width: 25rem;
-        align-self: center;
-    }
-    .analytics_dashboard_lower_middle{
-        width: 25rem;
-        align-self: center;
-    }
-    .analytics_dashboard_lower_right{
-        width: 25rem;
-        align-self: center;
-    }
-   .Nav_And_MainContent{
-    width: 80vw;
-   }
-    .dashboard {
-        width: 20vw;
-        height: 237%;
-    }
-    .Nav_And_MainContent{
-        width: 80vw;
-    }
-    .dashboard_heading {
-        font-size: 15px;
-        padding-left: 20px;
-    }
-    
-    .pages_heading {
-        font-size: 10px;
-        padding-left: 5px;
-    }
-    
-    .li_icons {
-        font-size: 10px;
-    }
-    
-    .li_names {
-        font-size: 10px;
-    }
-  }
-  @media (width > 300px) and (width <= 600px){
-    .two_card_arrange{
-        flex-direction: column;
-    }
-    .analytics_dashboard_upper{
-        flex-direction: column;
-    }
-    .analytics_dashboard_upper_right{
-        width: 13rem;
-    }
-    #area_chart{
-        transform: scale(0.5);
-    }
-    .analytics_dashboard_lower{
-        flex-direction: column;
-    }
-    .analytics_dashboard_lower_left{
-        width: 13rem;
-        align-self: center;
-    }
-    .analytics_dashboard_lower_middle{
-        width: 13rem;
-        align-self: center;
-    }
-    .world_map_btn{
-        height: 10px;
-        width: 10px;
-        font-size: 7px;
-    }
-    .world_map{
-        height: 7rem;
-    }
-    .analytics_dashboard_lower_right{
-        width: 13rem;
-        align-self: center;
-    }
-    #donut_chart{
-        transform: scale(0.5);
-    }
-    .Nav_And_MainContent{
-        width: 70vw;
-    }
-    .dashboard {
-        width: 30vw;
-        height: 266%;
-    }
-    
-    .dashboard_heading {
-        font-size: 12px;
-        padding-left: 10px;
-    }
-    .pages_heading {
-        font-size: 10px;
-        padding-left: 10px;
-    }
-    .dashboard_li{
-        padding-left: 10px;
-    }
-    
-    .li_icons {
-        font-size: 9px;
-    }
-    
-    .li_names {
-        font-size: 9px;
-    }
-    .navbar{
-        padding: 0 0.4rem;
+        gap: 2rem;
     }
 
-    .navbar_right{
-        display: flex;
-        gap: 0.4rem;
-        align-items: center;
+    .dashboard_calender {
+        font-size: 13px;
     }
-    .navbar_person_img{
-        width: 25px;
+
+    .wrapper {
+        padding-top: 20px;
+    }
+
+    .wrapper header {
+        padding: 10px 15px;
+    }
+
+    header .icons span {
         height: 25px;
-    }
-    .navbar_person{
-        font-size: 10px;
-        font-weight: 700;
-    }
-    .navbar_icons{
+        width: 25px;
+        margin: 0 1px;
+        line-height: 38px;
         font-size: 12px;
     }
-    .navbar_hamburger_icon{
-        font-size: 12px;
-    }
-    .navbar_bell{
+
+    header .current-date {
         font-size: 15px;
     }
-    .navbar_notification{
-        font-size: 5px;
-        font-weight: 400;
-        width: 10px;
-        height: 10px;
+
+    .calendar {
+        padding: 15px 10px;
     }
-  }
-  
+
+    .calendar .days {
+        margin-bottom: 8px;
+    }
+
+    .calendar li {
+        font-size: 13px;
+    }
+
+    .calendar .days li {
+        margin-top: 10px;
+        font-size: 13px;
+    }
+
+    .days li::before {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media (width >=1245px) {
+    .dashboard {
+        height: 100vh;
+        gap: 25px;
+    }
+
+    .dashboard_heading {
+        font-size: 22px;
+    }
+
+    .pages_heading {
+        font-size: 14px;
+    }
+
+    .dashboard_li {
+        height: 45px;
+    }
+
+    .li_icons {
+        font-size: 15px;
+    }
+
+    .li_names {
+        font-size: 15px;
+    }
+
+    /* .Nav_And_MainContent {
+        
+    } */
+
+
+    .navbar {
+        height: 65px;
+    }
+
+    /* .navbar_right {
+
+    } */
+
+    .navbar_person_img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .navbar_person {
+        font-size: 15px;
+    }
+
+    .navbar_icons {
+        font-size: 18px;
+    }
+
+    .navbar_hamburger_icon {
+        font-size: 18px;
+    }
+
+    .navbar_bell {
+        font-size: 18px;
+    }
+
+    .navbar_notification {
+        font-size: 7px;
+        width: 12px;
+        height: 12px;
+    }
+
+    .analytics_dashboard {
+        height: calc(100vh - 65px);
+        padding: 1.5rem 2rem;
+        gap: 1.8rem;
+    }
+
+    .analytics_dashboard_heading {
+        font-size: 25px;
+    }
+
+    /* .two_card_arrange {
+        gap: 3rem;
+    } */
+
+    .card {
+        padding: 19px 15px;
+        gap: 12px;
+    }
+
+    .card_icon {
+        font-size: 14px;
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+
+    /* .card_week {
+    } */
+
+    .card_heading {
+        font-size: 14px;
+    }
+
+    .card_number {
+        font-size: 23px;
+    }
+
+    .card_week {
+        font-size: 12px;
+    }
+
+    /* .analytics_dashboard_upper_left {
+
+    } */
+
+    .analytics_dashboard_upper_right {
+        height: 16rem;
+    }
+
+    /* #area_chart { */
+
+    /* } */
+
+    /* .analytics_dashboard_lower {
+        flex-direction: column;
+    } */
+
+    /* .analytics_dashboard_lower_left {
+      
+    } */
+
+    /* .analytics_dashboard_lower_middle {
+        
+    } */
+
+    .analytics_dashboard_lower_right {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        height: 18rem;
+        gap: 20px;
+    }
+
+    #donut_chart {
+        transform: scale(0.9);
+    }
+
+    .donut_charts_title {
+        font-size: 15px;
+    }
+
+    .world_map_heading {
+        font-size: 15px;
+    }
+
+    .world_map {
+        height: 15.5rem;
+    }
+
+    /* .world_map_btn_container {
+        
+    } */
+
+    .world_map_btn {
+        width: 17px;
+        height: 17px;
+        font-size: 12px;
+    }
+
+    .charts_title {
+        font-size: 15px;
+    }
+
+    /* .analytics_dashboard_upper {
+
+    } */
+
+    .dashboard_calender {
+        font-size: 15px;
+    }
+
+    .wrapper {
+        padding-top: 20px;
+    }
+
+    .wrapper header {
+        padding: 15px 15px;
+    }
+
+    header .icons span {
+        height: 35px;
+        width: 35px;
+        margin: 0 1px;
+        line-height: 38px;
+        font-size: 15px;
+    }
+
+    header .current-date {
+        font-size: 17px;
+    }
+
+    .calendar {
+        padding: 10px 15px;
+    }
+
+    .calendar .days {
+        margin-bottom: 15px;
+    }
+
+    .calendar li {
+        font-size: 14px;
+    }
+
+    .calendar .days li {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .days li::before {
+        height: 28px;
+        width: 28px;
+    }
+}

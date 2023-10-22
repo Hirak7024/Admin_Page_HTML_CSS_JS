@@ -6,8 +6,8 @@ var areaChartOptions = {
         data: [2000, 1500, 2500, 3000, 3500, 4000, 3000, 3500, 3000, 2500, 2000, 2500]
     }],
     chart: {
-        height: "200px",
-        width: "400px",
+        height: "100%",
+        width: "100%",
         type: 'area',
         zoom: {
             enabled: false
@@ -16,6 +16,7 @@ var areaChartOptions = {
             show: false
         },
         background: '#ffffff',
+        title: "Recent Movement"
     },
     dataLabels: {
         enabled: false
@@ -41,8 +42,8 @@ var donutChartOptions = {
     series: [4306, 3801, 1689],
     labels: ['Chrome', 'Firefox', 'IE'],
     chart: {
-        height: 380,
-        width: 350,
+        height: "100%",
+        width: "100%",
         type: 'donut',
         zoom: {
             enabled: false
@@ -51,10 +52,14 @@ var donutChartOptions = {
             show: false
         },
     },
+    legend:{
+        show:false,
+    },
     dataLabels: {
-        enabled: false
+        enabled: false,
     },
     colors: ["#4169e1", "#F6BE00", "#ff0000"],
+
 };
 
 var donutChart = new ApexCharts(document.querySelector("#donut_chart"), donutChartOptions);
